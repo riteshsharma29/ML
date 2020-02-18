@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>jQuary Base Menu</title>
+		<script type="text/javascript" src="jquery.js"></script>		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#m1d").hide();
+				$("#m2d").hide();
+				$("#m3d").hide();
+				
+				$("#m1").click(function(){					
+					$("#m1d").show();
+					$("#m2d").hide();
+					$("#m3d").hide();
+				  });
+				$("#m2").click(function(){					
+					$("#m1d").hide();
+					$("#m2d").show();
+					$("#m3d").hide();
+				  });
+				$("#m3").click(function(){					
+					$("#m1d").hide();
+					$("#m2d").hide();
+					$("#m3d").show();
+				  });
+			});
+		</script>
+		
+		<style type="text/css">
+			.mainmune{
+				text-align:center;
+				color:#99FF00;
+				background-color:#787878;
+				font-family:Verdana;
+				font-size:16px;
+				font-weight:bold;
+				height:35px;
+				border:5px solid #FFFF00;
+			}
+			.submune{
+				text-align:left;
+				color:#FFFF00;
+				background-color:#989898;
+				font-family:Verdana;
+				font-size:14px;
+				font-weight:bold;
+				margin-left:50px;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<table border="0" width="450px" removed="#787878" cellspacing="1" cellpadding="0">
+			<tr id="m1" class="mainmune">
+				<td>Menu 1</td>
+			</tr>
+			<tr id="m1d" class="submune">
+				<td>
+					Sub Menu 1<br>
+					Sub Menu 2
+				</br></td>				
+			</tr>
+			<tr id="m2" class="mainmune">
+				<td>Menu 2</td>
+			</tr>
+			<tr id="m2d" class="submune">
+				<td>
+					Sub Menu 3<br>
+					Sub Menu 4
+				</br></td>				
+			</tr>
+			<tr id="m3" class="mainmune">
+				<td>Menu 3</td>
+			</tr>
+			<tr id="m3d" class="submune">
+				<td>
+					Sub Menu 5<br>
+					Sub Menu 6
+				</br></td>				
+			</tr>			
+		</table>
+	
+	</body>
+
+</html>
